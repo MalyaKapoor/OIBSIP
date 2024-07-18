@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOORV CAFE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <header>
+    <div class="logo">
+      <a href="#"><img src="logo.png" alt="Moorv Cafe Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="textBox">
+      <h1>Welcome to Moorv Cafe</h1>
+      <p>Discover a culinary experience like no other.</p>
+      <a href="#" class="cta">Explore Our Menu</a>
+    </div>
+    <div class="imgBox">
+      <img src="pizza.png" alt="Delicious Pizza">
+    </div>
+  </div>
+
+  <ul class="thumb">
+    <li><img src="burger.png" alt="Burger" onclick="imgSlider('mocktail.png')"></li>
+    <li><img src="mocktail.png" alt="Mocktail" onclick="imgSlider('burger.png')"></li>
+  </ul>
+
+  <ul class="sci">
+    <li><a href="#"><img src="insta.png" alt="Instagram"></a></li>
+    <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+  </ul>
+
+  <div class="circle"></div>
+</section>
+
+<footer>
+  <p>&copy; 2024 MOORV CAFE. All rights reserved.</p>
+</footer>
+
+<script>
+function imgSlider(anything) {
+  document.querySelector('.imgBox img').src = anything;
+}
+</script>
+
+</body>
+</html>
+
